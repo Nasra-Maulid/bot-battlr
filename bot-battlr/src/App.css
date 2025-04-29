@@ -1,0 +1,191 @@
+.App {
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin: 10px 0;
+}
+
+.bot-collection, .your-bot-army {
+  margin: 10px 0;
+}
+
+/* Compact card styles */
+.bot-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  background: white;
+  position: relative;
+  height: 150px;
+  display: flex;
+}
+
+.bot-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.bot-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.bot-info {
+  flex: 1;
+  overflow: hidden;
+}
+
+.bot-info h3 {
+  margin: 0 0 3px 0;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.catchphrase {
+  margin: 0 0 5px 0;
+  font-size: 0.8rem;
+  color: #666;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bot-stats {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+
+.bot-stats span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.discharge-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+/* Army bot styles */
+.army-bot {
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.release-btn {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.empty-army {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+/* Bot Specs styles */
+.bot-specs {
+  margin-top: 20px;
+}
+
+.specs-container {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.specs-image {
+  width: 200px;
+}
+
+.specs-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.specs-details {
+  flex: 1;
+}
+
+.specs-details h2 {
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+
+.specs-stats {
+  margin: 15px 0;
+}
+
+.specs-stats div {
+  margin: 5px 0;
+}
+
+.specs-stats span {
+  font-weight: bold;
+  display: inline-block;
+  width: 70px;
+}
+
+.specs-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.specs-buttons button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.back-btn {
+  background: #ddd;
+}
+
+.enlist-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+/* Grid layout */
+.bot-grid, .army-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 5px;
+}
